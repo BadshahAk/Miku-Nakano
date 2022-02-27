@@ -20,12 +20,11 @@ from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
                             TelegramError, TimedOut, Unauthorized)
-from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
-                          Filters, MessageHandler)
+from telegram.ext import (CallbackContext, CallbackQueryHandler, Com.legra.ph/file/127465a9978b11c14ac0a.jpgpilters, MessageHandler)
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-PM_START_TEXT = """────「 [{}]({}) 」────\n*Hello {}!*\n*I'm An Anime Themed Advance Group Management Bot*\n\n❍ *Uptime:* `{}`\n❍ `{}` *Users, Across* `{}` *Chats*\n\n*Click The Help Button To Get List Of My Commands.*\nThanks To @Mikuxprobot For Repo"""
+PM_START_TEXT = """────「 [{}]({}) 」────\n*Hello {}!*\n*I'm Cute😍 baby 👶 Themed Advance Group Management Bot*\n\n❍ *Uptime:* `{}`\n❍ `{}` *Users, Across* `{}` *Chats*\n\n*Click The Help Button To Get List Of My Commands.*\nThanks To @AD_1317 For Help😇"""
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -57,11 +56,11 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="Summon Me 🏹",
-                             url="https://t.me/MikuXProBot?startgroup=true"),
+                             text="🏹Aԃԃ (Aɳʂι 👶) ƚσ ყσυɾ ɠɾσυρ🏹",
+                             url="https://t.me/Ansi_Ro_bot?startgroup=true"),
                         InlineKeyboardButton(
-                             text="Repo 🗞️",
-                             url="https://github.com/h0daka/Miku-Nakano"),
+                             text="𝒪𝓌𝓃𝑒𝓇 🗞️",
+                             url="https://t.me/its_pandit_Andy"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -82,33 +81,33 @@ HELP_STRINGS = """
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/85a404cf9edbd797c829f.jpg) *!*
+For all command use /* [or](https://te.legra.ph/file/88686fd89889721fb74c9.jpg) *!*
 """.format(
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
 MIKU_IMG = (
-      "https://telegra.ph/file/3f06de01df5bc3c3cf343.jpg",
-      "https://telegra.ph//file/05311caed13176f7d35e5.jpg",
-      "https://telegra.ph//file/88976abda0d0af9d4a517.jpg",
-      "https://telegra.ph//file/b388f473ddfb9cc727bb1.jpg",
-      "https://telegra.ph//file/d950844dad2e473950470.jpg",
+      "https://te.legra.ph/file/7b3c86cb9c422e7a13af2.jpg",
+      "https://te.legra.ph/file/f16a4a07df1df18071dc7.jpg",
+      "https://te.legra.ph/file/ba29a3e82bee0300878d6.jpg",
+      "https://te.legra.ph/file/989b4177ab436b34f51e5.jpg",
+      "https://te.legra.ph/file/33e2cc782cbc7031a6302.jpg",
 )
 
 TEXXT = "*Do you Like me?*"
 
 MIKU_N_IMG = (
-      "https://telegra.ph/file/837c61d9c51236fea4100.jpg",
-      "https://telegra.ph/file/ee34cf0d7e4782424b777.jpg",
-      "https://telegra.ph/file/5410b02359a2cabc2776b.jpg",
-      "https://telegra.ph/file/b1fc3b2af759999bf3b35.jpg",
-      "https://telegra.ph/file/305b5b3c4527cd439b926.jpg"
+      "https://te.legra.ph/file/33e2cc782cbc7031a6302.jpg",
+      "https://te.legra.ph/file/0d1a20c73e44f844dd239.jpg",
+      "https://te.legra.ph/file/1bebf760826f0150cef77.jpg",
+      "https://te.legra.ph/file/f182acb4cb828333b9691.jpg",
+      "https://te.legra.ph/file/68d3e8f7f383cc8bb68c1.jpg"
 
 )
 
-PM_PHOTO = "https://telegra.ph//file/3a88a958a88e83d85d284.jpg"
+PM_PHOTO = "https://te.legra.ph/file/6aeaa28c4441ff214ddd0.jpg"
 
-MIKU_DISPACHER_PIC = "https://telegra.ph//file/4ce99db6136c77248e0ec.jpg"
+MIKU_DISPACHER_PIC = "https://te.legra.ph/file/127465a9978b11c14ac0a.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me """
 
@@ -247,10 +246,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/MikusSupport"),
+                             url=f"https://t.me/CHATTINGxGROUP"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/MikuXUpdates")
+                             url="https://t.me/ansi_updates")
                      ] 
                 ]
             ),
@@ -308,7 +307,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="https://t.me/CHATTINGxGROUP")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -355,19 +354,18 @@ def miku_callback_data(update, context):
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n❍ Miku licensed under the GNU General Public License v3.0
-                 \n❍ If you have any question about Miku, let us know at [Miku Support](t.me/{SUPPORT_CHAT}).""",
+                 \n❍ baby 👶 licensed under the GNU General Public License v3.0
+                 \n❍ If you have any question about Cute😍, let us know at [💜Ansi updates💜](https://t.me/ansi_updates).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="My Master 🌏", url="t.me/h0daka"),
-                    InlineKeyboardButton(text="Try Inline ✨", switch_inline_query_current_chat="",),
+                    InlineKeyboardButton(text="My Master 🌏", url="https://t.me/its_pandit_Andy"),                    
                  ],
                  [
-                    InlineKeyboardButton(text="Updates 🕊️", url="t.me/MikuXUpdates"),
-                    InlineKeyboardButton(text="Support 🚑", url="t.me/Mikussupport"),
+                    InlineKeyboardButton(text="Updates 🕊️", url="https://t.me/ansi_updates"),
+                    InlineKeyboardButton(text="Support 🚑", url="https://t.me/CHATTINGxGROUP"),
                  ],
                  [
                     InlineKeyboardButton(text="Back ❌", callback_data="miku_back")
@@ -415,7 +413,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuXProBot?start=help")
+                  InlineKeyboardButton(text="Click here", url="https://t.me/ansi_Ro_bot?start=help")
                   ]
                 ]
             ),
@@ -432,7 +430,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="https://t.me/ansi_updates")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -581,7 +579,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 5291415314 and DONATION_LINK:
+        if OWNER_ID != 2017304572 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -625,20 +623,23 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_message(f"@{SUPPORT_CHAT}", f"[I'm In Online]({MIKU_DISPACHER_PIC})", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.send_message(f"@{SUPPORT_CHAT}", f"[❤️𝐼'𝓂 𝐼𝓃 𝒪𝓃𝓁𝒾𝓃𝑒❤️]({MIKU_DISPACHER_PIC})", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="[► Summon Me◄]",
-                             url="https://t.me/MikuXProBot?startgroup=true")
+                             text="[❤️𝔐𝔬𝔪❤️]",
+                             url="t.me/Its_Andy_ki_Jaan"),
+                       InlineKeyboardButton(
+                             text="[❤️𝕯𝖆𝖉❤️]",
+                             url="t.me/Its_pandit_Andy"),
                      ] 
                 ]
             ),
         ) 
         except Unauthorized:
             LOGGER.warning(
-                "Miku can't able to send message to support_chat, go and check!")
+                "Ansi can't able to send message to support_chat, go and check!")
         except BadRequest as e:
             LOGGER.warning(e.message)
 
@@ -681,7 +682,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Finally Miku Is In Online")
+        LOGGER.info("Finally Ansi Is In Online")
         updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
 
     if len(argv) not in (1, 3, 4):
